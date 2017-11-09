@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Threading;
 
 namespace ConsoleApp7
 {
@@ -18,15 +19,19 @@ namespace ConsoleApp7
 
             //}
             //Console.ReadLine();
-            String line;
-            Console.WriteLine("kas tahad näha märkmet?(y/n)");
-            string ans = Console.ReadLine();
-            if (ans =="y")
+            Start:
+            Console.WriteLine("Do you want to Read, Delete or Create New?[R/D/N]");
+            Console.WriteLine("To quit type 'Q'");
+            string choise = Console.ReadLine(); 
+            if (choise == "R")
             {
+                string line;
                 try
                 {
                     //Pass the file path and file name to the StreamReader constructor
-                    StreamReader sr = new StreamReader("C:\\Users\\opilane\\Desktop\\notes\\geodwad.txt");
+                    Console.WriteLine("Insert Note name");
+                    string choiseDva = Console.ReadLine();
+                    StreamReader sr = new StreamReader("C:\\Users\\opilane\\Desktop\\notes" + "\\" + choiseDva + ".txt");
 
                     //Read the first line of text
                     line = sr.ReadLine();
@@ -52,12 +57,44 @@ namespace ConsoleApp7
                 {
                     Console.WriteLine("Executing finally block.");
                 }
-                Console.ReadKey();
             }
-            else if (ans =="n")
+            if (choise == "N")
             {
-                Console.WriteLine("ok");
-                Console.ReadLine();
+
+            }
+            if (choise == "D")
+            {
+
+            }
+            if (choise == "Q")
+            {
+               Environment.Exit(1);
+            }
+            else
+            {
+
+                Console.WriteLine("Not a correct choise");
+                Console.WriteLine("Do you wish to clear console and try again?");
+                Console.WriteLine("Options: cl[CLears], ncl[doesnt Clear], q[Quits]");
+                string choiseOdin = Console.ReadLine();
+                if (choiseOdin == "cl")
+                {
+                    Console.WriteLine("Will display choises again");
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                    goto Start;
+                }
+                if (choiseOdin == "ncl")
+                {
+                    Console.WriteLine("Will display choises again");
+                    Thread.Sleep(1000);
+                    goto Start;
+                }
+                if (choiseOdin == "q")
+                {
+                    Environment.Exit(1);
+                }
+                
             }
         }
     }
