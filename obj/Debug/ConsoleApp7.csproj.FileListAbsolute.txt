@@ -5,3 +5,9 @@ C:\Users\SIIM\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csprojR
 C:\Users\SIIM\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
 C:\Users\SIIM\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe
 C:\Users\SIIM\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
+C:\Users\opilane\Documents\GitHub\Ka-Chow\bin\Debug\ConsoleApp7.exe.config
+C:\Users\opilane\Documents\GitHub\Ka-Chow\bin\Debug\ConsoleApp7.exe
+C:\Users\opilane\Documents\GitHub\Ka-Chow\bin\Debug\ConsoleApp7.pdb
+C:\Users\opilane\Documents\GitHub\Ka-Chow\obj\Debug\ConsoleApp7.csprojResolveAssemblyReference.cache
+C:\Users\opilane\Documents\GitHub\Ka-Chow\obj\Debug\ConsoleApp7.exe
+C:\Users\opilane\Documents\GitHub\Ka-Chow\obj\Debug\ConsoleApp7.pdb

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+
 namespace ConsoleApp7
 {
     class Program
@@ -21,7 +22,7 @@ namespace ConsoleApp7
             try
             {
                 //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader("C:\\Sample.txt");
+                StreamReader sr = new StreamReader("C:\\Users\\opilane\\Desktop\\notes\\geodwad.txt");
 
                 //Read the first line of text
                 line = sr.ReadLine();
