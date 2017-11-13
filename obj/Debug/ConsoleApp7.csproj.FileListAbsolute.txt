@@ -11,3 +11,10 @@ C:\Users\opilane\Documents\GitHub\Ka-Chow\bin\Debug\ConsoleApp7.pdb
 C:\Users\opilane\Documents\GitHub\Ka-Chow\obj\Debug\ConsoleApp7.csprojResolveAssemblyReference.cache
 C:\Users\opilane\Documents\GitHub\Ka-Chow\obj\Debug\ConsoleApp7.exe
 C:\Users\opilane\Documents\GitHub\Ka-Chow\obj\Debug\ConsoleApp7.pdb
+C:\Users\SIIM\Source\Repos\Ka-Chow\obj\Debug\ConsoleApp7.csprojResolveAssemblyReference.cache
+C:\Users\SIIM\Source\Repos\Ka-Chow\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Users\SIIM\Source\Repos\Ka-Chow\obj\Debug\ConsoleApp7.exe
+C:\Users\SIIM\Source\Repos\Ka-Chow\obj\Debug\ConsoleApp7.pdb
+C:\Users\SIIM\Source\Repos\Ka-Chow\bin\Debug\ConsoleApp7.exe.config
+C:\Users\SIIM\Source\Repos\Ka-Chow\bin\Debug\ConsoleApp7.exe
+C:\Users\SIIM\Source\Repos\Ka-Chow\bin\Debug\ConsoleApp7.pdb

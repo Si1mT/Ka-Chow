@@ -11,8 +11,6 @@ namespace ConsoleApp7
     {
         static void delete()
         {
-        string f=Get.Files=Path("C:\\Users\\opilane\\Desktop\\notes\\geodwad - Copy (2)");
-            File.Delete(f); 
 
         }
     }
