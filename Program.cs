@@ -110,6 +110,7 @@ namespace ConsoleApp7
                 {
                     File.Delete(path2);
                 }
+                goto Start;
             }
             if (choise == "Q")
             {
