@@ -28,24 +28,19 @@ namespace ConsoleApp7
                 string line;
                 try
                 {
-                    //Pass the file path and file name to the StreamReader constructor
                     Console.WriteLine("Insert Note name");
                     string choiseDva = Console.ReadLine();
                     StreamReader sr = new StreamReader("C:\\Users\\opilane\\Desktop\\notes" + "\\" + choiseDva + ".txt");
 
-                    //Read the first line of text
                     line = sr.ReadLine();
 
-                    //Continue to read until you reach end of file
                     while (line != null)
                     {
-                        //write the lie to console window
+
                         Console.WriteLine(line);
-                        //Read the next line
                         line = sr.ReadLine();
                     }
 
-                    //close the file
                     sr.Close();
                     Console.ReadLine();
                 }
@@ -60,11 +55,61 @@ namespace ConsoleApp7
             }
             if (choise == "N")
             {
+                Console.WriteLine("What should the filename be?");
+                string choise3 = Console.ReadLine();
+                string path = ("C:\\Users\\opilane\\Desktop\\notes" + "\\" + choise3 + ".txt");
 
+                try
+                {
+                    if (File.Exists(path))
+                    {
+                        File.Delete(path);
+                    }
+
+                    using (FileStream fs = File.Create(path))
+                    {
+                        Console.WriteLine("Enter text that you wish to type");
+                        string UserText = Console.ReadLine();
+                        Console.WriteLine("Save or Abort?[S/A]");
+                        string choise4 = Console.ReadLine();
+                        if (choise4 == "S")
+                        {
+                            Byte[] info = new UTF8Encoding(true).GetBytes(UserText);
+
+                            fs.Write(info, 0, info.Length);
+                        }
+                        if (choise4 == "A")
+                        {
+                            goto Start;
+                        }
+
+                    }
+                    using (StreamReader sr = File.OpenText(path))
+                    {
+                        Console.WriteLine("This is the file text now");
+                        string s = "";
+                        while ((s = sr.ReadLine()) != null)
+                        {
+                            Console.WriteLine(s);
+                        }
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+                goto Start;
             }
             if (choise == "D")
             {
-
+                Console.WriteLine("Enter Note you wish to delete");
+                string choise6 = Console.ReadLine();
+                string path2 = ("C:\\Users\\opilane\\Desktop\\notes" + "\\" + choise6 + ".txt");
+                if (File.Exists(path2))
+                {
+                    File.Delete(path2);
+                }
             }
             if (choise == "Q")
             {
